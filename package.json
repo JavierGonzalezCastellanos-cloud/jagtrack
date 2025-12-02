@@ -1,14 +1,21 @@
 {
   "name": "jagtrack",
   "version": "1.0.0",
- "description": "This is a website made to help Jefferson Academy students organize their classes",
-"main": "index.html",
-"scripts": {
- "lite": "lite-server",
- "start": "npm run lite",
- "test": "echo \"Error: no test specified\" && exit 1"
-},
-
+  "description": "This is a website made to help Jefferson Academy students organize their classes",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/inference": "^4.13.3",
+    "@mantine/core": "^8.3.8",
+    "@mantine/hooks": "^8.3.8"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

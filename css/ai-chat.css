@@ -1,0 +1,244 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #5f139c;
+  background-color: #dc5efc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#app {
+  width: 100%;
+  max-width: 800px;
+}
+
+.chat-container {
+  background: rgb(44, 47, 214);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(48, 8, 8, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.chat-display {
+  background: #b31b80;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.welcome-message {
+  color: #2454b4;
+  text-align: center;
+  font-style: italic;
+  padding: 20px;
+}
+
+.message {
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 85%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background: #7914bd;
+  color: rgb(116, 6, 6);
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.ai-message {
+  background: #c400f5;
+  color: #0c2e5f;
+  align-self: flex-start;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #a629d8;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 60px;
+}
+
+#user-input:focus {
+  outline: none;
+  border-color: #720872;
+}
+
+#send-button {
+  padding: 12px 24px;
+  background: #3b82f6;
+  color: rgb(204, 26, 26);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-end;
+}
+
+#send-button:hover {
+  background: #230baf;
+}
+
+#send-button:active {
+  background: #1d4ed8;
+}
+
+#send-button:disabled {
+  background: #5e06c2;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  color: #6c1fc4;
+  font-style: italic;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.error-message {
+  background: #c0096d;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 12px 16px;
+  border-radius: 8px;
+  align-self: center;
+  max-width: 100%;
+}
+.prompt-section {
+  background: #0397c4;
+  border: 2px solid #0db6d4;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.prompt-label {
+  font-weight: 600;
+  color: #b77cc9;
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+}
+
+.prompt-template {
+  background: rgb(122, 12, 12);
+  padding: 12px;
+  border-radius: 6px;
+  color: #374151;
+  font-style: italic;
+  margin: 0 0 12px 0;
+  border: 1px solid #e21a7e;
+}
+
+.template-button {
+  background: #3b82f6;
+  color: rgb(212, 8, 59);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.template-button:hover {
+  background: #2c0231;
+}
+
+.template-button:active {
+  background: #0c2774;
+}
+.prompt-section {
+  background: #0ae4ad;
+  border: 2px solid #34680a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.prompt-label {
+  font-weight: 600;
+  color: #051752;
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+}
+
+.prompt-template {
+  background: rgb(194, 14, 179);
+  padding: 12px;
+  border-radius: 6px;
+  color: #00183d;
+  font-style: italic;
+  margin: 0 0 12px 0;
+  border: 1px solid #af4508;
+}
+
+.template-button {
+  background: #b9b607;
+  color: rgb(83, 0, 0);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.template-button:hover {
+  background: #fc1ab1;
+}
+
+.template-button:active {
+  background: #f0ff19;
+}
