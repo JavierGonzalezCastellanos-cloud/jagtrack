@@ -308,3 +308,9 @@ body {
  transform: scale(1.1);
 }
 
+.profile-image {
+ max-width: 300px;
+ margin: 20px auto;
+ display: block;
+}
+
