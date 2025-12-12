@@ -306,7 +306,27 @@ npm ru
            </div>
        </div>
    </div>
-</footer>
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+Add your theme toggle script AFTER these (but still before closing </body>):
+
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!-- Custom JavaScript for theme toggle -->
+<script src="js/theme-toggle.js"></script>
+
+
+</body>
+</html>
 
 
 </html>
